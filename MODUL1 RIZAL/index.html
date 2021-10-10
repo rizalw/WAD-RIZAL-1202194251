@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Home -->
+    <section>
+        <nav id ="home" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid ms-5">
+                <a class="navbar-brand mx-4" href="#">
+                    <img src="logo-ead.png" alt="" width="150">
+                  </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item mx-2">
+                      <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                      <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                      <a class="nav-link" href="#layanan">Layanan</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#registrasi">Registrasi</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+        </nav>
+        <div class="container-fluid py-5 d-flex flex-column align-content-center bg-secondary bg-opacity-25">
+            <iframe style = "margin-left: auto; margin-right: auto;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/AwMeQJ_u73I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h1 class="display-1 text-center mt-51">Klinik EAD</h1>
+            <p class="fs-4 text-center">Klinik EAD merupakan klinik yang menyediakan layanan tes Covid19</p>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    </section>
+    <!-- About -->
+    <section>
+        <div class="container py-5" id="about">
+            <p class="h2 text-center">Tentang Kami</p>
+            <div class="d-flex mb-5">
+                <div class="p-2 w-50 fs-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, rem omnis, non ratione aliquam aspernatur sit quis, ab quibusdam recusandae eveniet? Eius ratione facere nesciunt unde dolores cupiditate mollitia ipsum?</div>
+                <div class="p-2 w-50 fs-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit neque totam nulla. In animi natus dignissimos error nam veritatis ex quasi, iste vel voluptas quisquam repellendus. Incidunt alias quo culpa.</div>
+            </div>
+        </div>
+    </section>
+    <!-- Layanan -->
+    <section class="bg-secondary bg-opacity-25">
+        <div class="container p-5" id="layanan">
+            <p class="h2 text-center">Jenis Test</p>
+            <div class="d-flex justify-content-evenly mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="apa-beda-rapid-test-antigen-dengan-rapid-test-sebelumnya.jpg" class="card-img-top" alt="..." width="400" height="200">
+                    <div class="card-body">
+                      <h5 class="card-title">Tes Antigen</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti numquam ipsam fugit necessitatibus quos repudiandae beatae laborum non eos eum.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="apakah-pcr-bisa-membedakan-jenis-varian-virus-corona.jpg" class="card-img-top" alt="..." width="400" height="200">
+                    <div class="card-body">
+                      <h5 class="card-title">Tes PCR</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum odit excepturi perspiciatis voluptates? Enim quaerat necessitatibus quisquam. Expedita, officiis quia.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="tes.jpg" class="card-img-top" alt="..." width="400" height="200">
+                    <div class="card-body">
+                      <h5 class="card-title">Tes Antibodi</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iusto excepturi unde, maiores obcaecati ab debitis voluptatibus consequatur eos rem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Registrasi -->
+    <section>
+        <div class="container p-5" id="registrasi">
+            <p class="h2 text-center">Registrasi</p>
+            <form action="/" class="form w-75 ms-auto me-auto mt-4">
+                <div class="mb-3 row">
+                    <label for="inputNama" class="col-3 col-form-label">Nama</label>
+                    <div class="col-8">
+                      <input type="text" name="nama" value="" class="form-control" id="inputNama" placeholder="Nama anda...">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputHP" class="col-3 col-form-label">Nomor HP</label>
+                    <div class="col-8">
+                      <input type="text" name="nomor-hp" value="" class="form-control" id="inputHP">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPenyakit" class="col-3 col-form-label">Riwayat Penyakit</label>
+                    <div class="col-8">
+                        <textarea name="riwayat-penyakit" class="form-control" value="" id="inputPenyakit" cols = "79" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPembayaran" class="col-3 col-form-label">Pembayaran</label>
+                    <div class="col-8 d-flex">
+                        <div class="form-check pe-5">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">Tunai</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">Transfer</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3" style="display: flex;">
+                    <label for="inputTest" class="col-3 col-form-label">Jenis Test</label>
+                    <select class="form-select col-9" aria-label="Default select example">
+                        <option value="0" selected>PCR</option>
+                        <option value="1">Rapid Test</option>
+                        <option value="2">Antibodi</option>
+                    </select>
+                </div>
+                <div class="mb">
+                    <button type="submit" class="btn btn-primary">Kirim</button>
+                </div>
+            </form>
+        </div>
+        <footer class="navbar bg-secondary bg-opacity-25 py-1">
+            <div class="container">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        Dibuat oleh Rizal Widyananda_1202194251
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
