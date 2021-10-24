@@ -64,7 +64,13 @@
                     $check_out = date('d-m-y H:i:s', strtotime("$check_in +$duration hours"));
                     $building = $_GET['building'];
                     $number = $_GET['number'];
-                    $services = $_GET['services'];
+                    $isTrue = isset($_GET['services']);
+                    if ($isTrue) {
+                        $services = $_GET['services'];
+                    } else {
+                        $services = array();
+                    }
+                    
                     $total_price = 0;
                     // ini buat ngecek biaya sewa bangunan
                     if ($building === "Nusantara Hall") {
