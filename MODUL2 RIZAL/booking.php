@@ -63,7 +63,7 @@
                  ?>" alt="" width="400" height="200" class="d-block mx-auto">
             </div>
             <div class="kanan flex-grow-1">
-                <form action="my_booking.php" method = "GET">
+                <form action="my_booking.php" method = "post">
                     <label for="" class="form-label">Name</label>
                     <input type="text" class="form-control" value="rizal_1202194251" id="name" name="name" disabled><br>
                     <label for="" class="form-label">Event Date</label>
@@ -104,7 +104,7 @@
                     <input type="text" class="form-control" id="number" name="number"><br>
                     <label for="" class="form-label">Add Services</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="flexCheckDefault" name="services[]" value = "Catering">
+                        <input class="form-check-input" type="checkbox" id="flexCheckDefault" name="services" value = "Catering">
                         <label class="form-check-label" for="flexCheckDefault" >
                             Catering / $700
                         </label>

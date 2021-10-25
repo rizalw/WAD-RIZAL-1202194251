@@ -57,7 +57,7 @@
             </thead>
             <tbody>
                 <?php 
-                    $date = $_GET['event_date'];
+                    $tanggal = $_GET['event_date'];
                     $start_time = $_GET['start_time'];
                     $check_in = date('d-m-y H:i:s', strtotime("$date $start_time"));
                     $duration = $_GET['duration'];
