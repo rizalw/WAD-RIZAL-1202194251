@@ -89,6 +89,54 @@
                                     </label>
                                 </div>
                             </div>
+                            <?php 
+                            $tags=explode(', ', $data['tag']);
+                            ?>
+                            <div class="d-flex flex-wrap mt-2">
+                                <b>Tag</b>
+                                <div class="form-check ms-2">
+                                    <input class="form-check-input" type="checkbox" name="tag[]" value="Pemrograman" id="flexCheckDefault" <?php if (in_array("Pemrograman", $tags)) echo "checked";?>>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Pemrograman
+                                    </label>
+                                </div>
+                                <div class="form-check ms-2">
+                                    <input class="form-check-input" type="checkbox" name="tag[]" value="Website" id="flexCheck1" <?php if (in_array("Website", $tags)) echo "checked";?> >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Website
+                                    </label>
+                                </div>
+                                <div class="form-check ms-2">
+                                    <input class="form-check-input" type="checkbox" name="tag[]" value="Java" id="flexCheck2" <?php if (in_array("Java", $tags)) echo "checked";?> >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Java
+                                    </label>
+                                </div>
+                                <div class="form-check ms-2">
+                                    <input class="form-check-input" type="checkbox" name="tag[]" value="OOP" id="flexCheck3" <?php if (in_array("OOP", $tags)) echo "checked";?> >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        OOP
+                                    </label>
+                                </div>
+                                <div class="form-check ms-2">
+                                    <input class="form-check-input" type="checkbox" name="tag[]" value="MVC" id="flexCheck4" <?php if (in_array("MVC", $tags)) echo "checked";?> >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        MVC
+                                    </label>
+                                </div>
+                                <div class="form-check ms-2">
+                                    <input class="form-check-input" type="checkbox" name="tag[]" value="Kalkulus" id="flexCheck5" <?php if (in_array("Kalkulus", $tags)) echo "checked";?> >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Kalkulus
+                                    </label>
+                                </div>
+                                <div class="form-check ms-2">
+                                    <input class="form-check-input" type="checkbox" name="tag[]" value="Lainnya" id="flexCheck6" <?php if (in_array("Lainnya", $tags)) echo "checked";?> >
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Lainnya
+                                    </label>
+                                </div>
+                            </div>
                             <input type="number" name="id_buku" id="id_buku" value="<?php echo $data['id_buku'] ?>" hidden>
                         </div>
                         <div class="modal-footer">
