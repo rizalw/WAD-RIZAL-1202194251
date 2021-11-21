@@ -13,8 +13,7 @@
             tahun_terbit = $tahun,
             deskripsi = $deskripsi,
             bahasa = $bahasa
-            WHERE id_buku = '$id_buku';"
-        );
+            WHERE id_buku = $id_buku;");
         header("Location: Rizal_Home.php");
     };
 ?>
