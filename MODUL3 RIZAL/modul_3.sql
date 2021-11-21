@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 20, 2021 at 03:25 AM
+-- Generation Time: Nov 21, 2021 at 05:35 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -39,6 +39,13 @@ CREATE TABLE `buku_table` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Dumping data for table `buku_table`
+--
+
+INSERT INTO `buku_table` (`id_buku`, `judul_buku`, `penulis_buku`, `tahun_terbit`, `deskripsi`, `gambar`, `tag`, `bahasa`) VALUES
+(24, 'Matematika Diskrit ', 'Rizal_1202194251', 2020, 'Updated ini mah dan lagi', '299837156_MATEMATIKA-DISKRIT.jpg', 'MVC', 'Lainnya');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -56,7 +63,7 @@ ALTER TABLE `buku_table`
 -- AUTO_INCREMENT for table `buku_table`
 --
 ALTER TABLE `buku_table`
-  MODIFY `id_buku` int(100) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_buku` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
