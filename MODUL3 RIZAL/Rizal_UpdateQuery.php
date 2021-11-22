@@ -8,7 +8,7 @@
         $deskripsi = $_POST['deskripsi'];
         $bahasa = $_POST['bahasa'];
         $tag = implode(", ", $_POST['tag']);
-        mysqli_query($koneksi, "
+        mysqli_query($koneksi, "UPDATE buku_table SET
                                 judul_buku = '$judul',
                                 penulis_buku = '$nama',
                                 tahun_terbit = $tahun,
