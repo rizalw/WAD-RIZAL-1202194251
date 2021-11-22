@@ -11,7 +11,7 @@
         $rand = rand();
         $file = $rand.'_'.$filename;
         move_uploaded_file($_FILES['foto']['tmp_name'], 'gambar/'.$rand.'_'.$filename);
-        mysqli_query($koneksi, "INSERT INTO buku_table(judul_buku, penulis_buku, tahun_terbit, deskripsi, gambar, tag, bahasa) VALUES('$judul','$nama', '$tahun', '$deskripsi', '$file', '$tag', '$bahasa')");
+        mysqli_query($koneksi, "(judul_buku, penulis_buku, tahun_terbit, deskripsi, gambar, tag, bahasa) VALUES('$judul','$nama', '$tahun', '$deskripsi', '$file', '$tag', '$bahasa')");
         header("Location: Rizal_Home.php");
     }
 ?>
