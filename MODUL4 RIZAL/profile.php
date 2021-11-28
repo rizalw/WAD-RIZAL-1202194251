@@ -14,6 +14,7 @@ session_start();
 
 <body>
     <?php
+    require("navbar_login.php");
     if (isset($_SESSION["gagal"])) {
         echo "<div class='alert alert-danger d-flex justify-content-between' role='alert'>
         Password salah / tidak sama
@@ -35,7 +36,6 @@ session_start();
       </div>";
         unset($_SESSION['berhasil']);
     }
-    require("navbar_login.php");
     ?>
     <main class="container mt-5">
         <div class="card shadow w-75 mx-auto">

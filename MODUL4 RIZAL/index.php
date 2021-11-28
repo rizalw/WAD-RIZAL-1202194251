@@ -15,6 +15,7 @@ session_start();
 
 <body>
     <?php
+    require("navbar_login.php");
     if (isset($_SESSION["berhasil"])) {
         echo "<div class='alert alert-success d-flex justify-content-between' role='alert'>
         Berhasil Login
@@ -29,7 +30,6 @@ session_start();
       </div>";
         unset($_SESSION['is_pesan']);
     }
-    require("navbar_login.php");
     ?>
     <main class="container mb-5">
         <div class="gede py-4 mt-5 text-center fs-2" style="background-color: <?php echo (isset($_COOKIE['warna']) ? substr($_COOKIE['warna'], 3, 7) : '#88c8f7') ?>;"><b>EAD Travel</b></div>

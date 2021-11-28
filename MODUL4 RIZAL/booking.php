@@ -14,6 +14,7 @@ session_start()
 
 <body>
     <?php
+    require("navbar_login.php");
     if (isset($_SESSION["is_hapus"])) {
         echo "<div class='alert alert-success d-flex justify-content-between' role='alert'>
         Berhasil dihapus!
@@ -21,7 +22,6 @@ session_start()
       </div>";
         unset($_SESSION['is_hapus']);
     }
-    require("navbar_login.php");
     ?>
     <main class="container">
         <table class="table table-striped mt-5">
