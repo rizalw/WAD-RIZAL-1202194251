@@ -5,5 +5,4 @@
         $ya = mysqli_query($koneksi, " DELETE FROM buku_table WHERE id_buku = $id_buku");
         header("Location: Rizal_Home.php");
     }
-    // ceritanya ada update
 ?>
