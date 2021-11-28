@@ -38,11 +38,4 @@ if (isset($_POST['submit'])) {
         $_SESSION["gagal"] = "Gagal";
         header("Location: profile.php");
     }
-
-    // $status = mysqli_query($koneksi, "INSERT INTO user(nama, email, password, no_hp) VALUES('$nama','$email', '$password', '$nomor_hp')");
-    // if ($status) {
-    //     header("Location: login.php");
-    // } else {
-    //     header("Location: registrasi.php");
-    // };
 }
