@@ -14,10 +14,6 @@
                 <p>Nama&nbsp;: RIZAL WIDYANANDA</p>
                 <p>NIM&nbsp;&nbsp;&nbsp;&nbsp;: 1202194251</p>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
         </div>
     </div>
 </div>
