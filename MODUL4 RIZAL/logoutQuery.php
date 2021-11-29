@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    sessionstart();
     unset($_SESSION['login']);
     $_SESSION["logout"] = "true";
     header("Location: login.php");

@@ -15,7 +15,7 @@ session_start()
 <body>
     <?php
     require("navbar_login.php");
-    if (isset($_SESSION["is_hapus"])) {
+    if (isset(N["is_hapus"])) {
         echo "<div class='alert alert-success d-flex justify-content-between' role='alert'>
         Berhasil dihapus!
         <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>

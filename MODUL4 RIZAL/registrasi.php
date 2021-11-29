@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: <?php echo (isset($_COOKIE['warna'])? substr($_COOKIE['warna'], 3, 7): '#88c8f7')?>;">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: <?php echo (isset($['warna'])? substr($_COOKIE['warna'], 3, 7): '#88c8f7')?>;">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
