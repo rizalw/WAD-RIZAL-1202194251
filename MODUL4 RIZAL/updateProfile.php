@@ -23,7 +23,6 @@ if (isset($_POST['submit'])) {
                     WHERE email = '$email';";
         $hasil = mysqli_query($koneksi, $query);
         if ($hasil) {
-            setcookie("warna", $value);
             setcookie("warna", $value, time() + 3600);
             $_SESSION["berhasil"] = "berhasil";
             $_SESSION["nama"] = $nama;
