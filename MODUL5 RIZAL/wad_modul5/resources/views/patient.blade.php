@@ -17,7 +17,7 @@
 @endsection
 
 @section('home')
-@if(count($ients) != 0)
+@if(count($patients) != 0)
 <a href="{{route('pickVaccine')}}">
     <button class="btn btn-primary d-block mt-2">Add Patient</button>
 </a>

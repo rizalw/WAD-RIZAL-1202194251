@@ -16,7 +16,7 @@ use App\Http\Controllers\VaccineController;
 */
 Route::get('/', [VaccineController::class, 'about'])->name('about');
 Route::get('/vaccine', [VaccineController::class, 'index'])->name('index');
-Route::get('/insertVac', [VaccineController::class, 'insertVaccine'])->name('insertVaccine');
+Route::get('/insertVaccine', [VaccineController::class, 'insertVaccine'])->name('insertVaccine');
 Route::post('/insertVaccine', [VaccineController::class, 'uploadVaccine'])->name('uploadVaccine');
 Route::get('/updateVaccine/{id}', [VaccineController::class, 'updateVaccine'])->name('updateVaccine');
 Route::post('/updateVaccine/{id}', [VaccineController::class, 'syncVaccine'])->name('syncVaccine');

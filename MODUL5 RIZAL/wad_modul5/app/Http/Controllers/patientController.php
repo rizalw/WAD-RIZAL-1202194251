@@ -20,7 +20,7 @@ class patientController extends Controller
     }
     public function insertPatient($id)
     {
-        $vacciness = Vaccine::find($id);
+        $vaccine = Vaccine::find($id);
         return view("insertPatient", ['vaccine' => $vaccine]);
     }
     public function uploadPatient(Request $request)

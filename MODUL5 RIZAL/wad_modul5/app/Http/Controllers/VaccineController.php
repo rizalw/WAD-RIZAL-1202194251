@@ -64,7 +64,7 @@ class VaccineController extends Controller
     public function deleteVaccine($id)
     {
         $vaccine = Vaccine::find($id);
-        $vaccine->de();
+        $vaccine->delete();
         return redirect('/vaccine');
     }
 };
